@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CartCraft | Track Order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/site-header.css">
+    <link rel="stylesheet" href="styles/pages/tracking.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-left-section">
+        <a href="index.html" class="header-link cartcraft-logo" aria-label="CartCraft home">
+          <span class="cartcraft-name">Cart<span>Craft</span></span>
+        </a>
+      </div>
+      <div class="orders-header-title">Order tracking</div>
+      <nav class="header-right-section" aria-label="Main navigation">
+        <a class="orders-link header-link" href="orders.html">Your orders</a>
+        <a class="cart-link header-link" href="checkout.html">
+          <img class="cart-icon" src="images/icons/cart-icon.png" alt="">
+          <span class="cart-text">Cart</span>
+        </a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="order-tracking js-order-tracking" aria-live="polite">
+        <a class="back-to-orders-link link-primary" href="orders.html">← Back to your orders</a>
+        <p class="tracking-message">Loading order details...</p>
+      </div>
+    </main>
+
+    <script src="scripts/tracking.js" type="module"></script>
+  </body>
+</html>
